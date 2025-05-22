@@ -274,3 +274,96 @@ ul  p {
 .copyright {
     padding-top: 15px;
 }
+
+/* --- Responsive Design --- */
+
+@media screen and (max-width: 1024px) {
+    .nav-search {
+        width: 500px;
+    }
+    .panel-ops {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .box {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .shop-section {
+        justify-content: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .panel {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .panel-ops {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-logo, .nav-address, .nav-signin, .nav-returns, .nav-cart {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .nav-search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .search-select, .search-input, .search-icon {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .search-input {
+        padding: 5px;
+    }
+
+    .hero-message {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .foot-panel4 {
+        font-size: 0.7rem;
+    }
+}
