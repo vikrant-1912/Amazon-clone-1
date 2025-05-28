@@ -19,7 +19,7 @@ A simple e-commerce user interface inspired by Amazon. Built with React to pract
 <!-- ![Home](./screenshots/home.png) -->
 
 ## 🌐 Live Demo
-[Visit Site](https://your-vercel-link.vercel.app)
+[Visit Site](https://amazon-clone-1-black-six.vercel.app))
 
 ## 📁 Folder Structure
 
