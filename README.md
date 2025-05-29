@@ -1,7 +1,7 @@
 # Amazon-clone-1
 # 🛒 Amazon Clone
 
-A simple e-commerce user interface inspired by Amazon. Built with HTML5 , CSS3 and Fullt Responsive We design to alloq your Devices to be a good Web fit and UI layout.
+A simple e-commerce user interface inspired by Amazon. Built with HTML5 , CSS3 and Fullt Responsive We design to allow your Devices to be a good Web fit and UI layout.
 Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving user Smooth Experience like a real Amazon have.
 
 ## 🚀 Features
@@ -13,6 +13,7 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 ## 🧰 Tech Stack
 - HTML5
 - CSS3
+- javaScript (Adding)
 - Responsive Design
 
 ## 📸 Screenshots
