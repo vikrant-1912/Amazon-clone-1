@@ -98,6 +98,41 @@ span {
     font-weight: 700;
 }
 
+/*Toggle dark mode in navbar*/
+
+.toggleDarkMode{
+    font-weight: 700;
+    
+    color: white;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar,
+.dark-mode .panel,
+.dark-mode .hero-message,
+.dark-mode .box,
+.dark-mode .foot-panel1,
+.dark-mode .foot-panel2,
+.dark-mode .foot-panel3,
+.dark-mode .foot-panel4 {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.dark-mode .box-content p,
+.dark-mode ul a,
+.dark-mode .panel-deals,
+.dark-mode .nav-second {
+    color: #ccc;
+}
+
+/* Toggle mode end*/
+
+
 /* box 6 */
 
 .nav-cart i {
@@ -274,6 +309,81 @@ ul  p {
 .copyright {
     padding-top: 15px;
 }
+
+
+/* Welcome Popup */
+
+.welcome-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 
 /* --- Responsive Design --- */
 

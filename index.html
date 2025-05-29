@@ -39,7 +39,7 @@
                     <option> Gift Store </option>
 
                 </select>
-                <input placeholder="Search amazon" class="search-input"> 
+                <input placeholder="Search amazon" class="search-input" oninput="filterProducts()"> 
                 <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -54,11 +54,20 @@
             <p><span> Returns </span></p>
             <p class="nav-second"> & Orders </p>
         </div>
-
+    <a href="cart.html">
         <div class="nav-cart border"> 
             <i class="fa-solid fa-cart-plus"></i>
-            Cart 
+            Cart <span id="cart-count" style="background: orange; color: black; padding: 2px 6px; border-radius: 10px;">0</span> 
         </div>
+    </a>
+
+        <div class="toggleDarkMode">
+        <button onclick="toggleDarkMode()" style="margin-left: 10px; padding: 5px; border-radius: 25px; cursor: pointer;">
+    🌙 Toggle Dark Mode
+</button>
+
+        </div>
+
     </div>
 
         <div class="panel">
@@ -92,60 +101,70 @@
         <div class=" box">
            <div class="box-content">
             <h2> Kitchen Utensils </h2>
-            <div class="box-image" style="background-image: url('Box1.jpg');"> </div>
+            <div class="box-image" onclick="showModal('Kitchen Utensils', 'Box1.jpg', 'High quality kitchen utensils for your cooking needs')" style="background-image: url('Box1.jpg');"> </div>
             <p>See more </p> 
+            <button onclick="addToCart('Kitchen Utensils')">Add to Cart</button>
+            
+
            </div>
             
         </div>
         <div class=" box"> 
             <div class="box-content">
                 <h2> Home Decor </h2>
-                <div class="box-image" style="background-image: url('Box2.jpg');"> </div>
+                <div class="box-image" onclick="showModal('Home Decor', 'Box2.jpg', 'See and choose your Perfect Home decor')" style="background-image: url('Box2.jpg');"> </div>
                 <p>See more </p> 
+                <button onclick="addToCart('Home Decor')">Add to Cart</button>
                </div>
         </div>
         <div class=" box"> 
             <div class="box-content">
                 <h2> Clothes</h2>
-                <div class="box-image" style="background-image: url('Box3.jpg');"> </div>
+                <div class="box-image" onclick="showModal('Clothes', 'Box3.jpg', 'Clothes are everyones need , so why so think before buy!')" style="background-image: url('Box3.jpg');"> </div>
                 <p>See more </p> 
+                <button onclick="addToCart('Clothes')">Add to Cart</button>
                </div>
         </div>
         <div class=" box"> 
             <div class="box-content">
                 <h2> Mobiles & Smartphones </h2>
-                <div class="box-image" style="background-image: url('Box4.jpg');"> </div>
+                <div class="box-image" onclick="showModal('Mobiles & Smartphones', 'Box4.jpg', 'Hey YOU! Gen-z, comm-on Buy or gift somone a perfect gift i.e Smartphone')" style="background-image: url('Box4.jpg');"> </div>
                 <p>See more </p> 
+                <button onclick="addToCart('Mobile & Smartphones')">Add to Cart</button>
                </div>
         </div>
 
         <div class=" box">
             <div class="box-content">
              <h2> Headphones & Airbuds </h2>
-             <div class="box-image" style="background-image: url('Box5.jpg');"> </div>
+             <div class="box-image" onclick="showModal('Headphones & Airbuds', 'Box5.jpg', 'Ahh! Airbuds or Headphones are everyones favourites , buy from 300-25000 any Range')" style="background-image: url('Box5.jpg');"> </div>
              <p>See more </p> 
+             <button onclick="addToCart('Headphones & Airbuds')">Add to Cart</button>
             </div>
              
          </div>
          <div class=" box"> 
              <div class="box-content">
                  <h2> Laptops </h2>
-                 <div class="box-image" style="background-image: url('Box6.jpg');"> </div>
+                 <div class="box-image" onclick="showModal('Laptops', 'Box6.jpg', 'Laptop , Pc or Mac whatever you Like, for gaming or professional work')" style="background-image: url('Box6.jpg');"> </div>
                  <p>See more </p> 
+                 <button onclick="addToCart('Laptops')">Add to Cart</button>
                 </div>
          </div>
          <div class=" box"> 
              <div class="box-content">
-                 <h2> Watches for Men's </h2>
-                 <div class="box-image" style="background-image: url('Box7.jpg');"> </div>
+                 <h2> Watches for Men </h2>
+                 <div class="box-image" onclick="showModal('Watches for Men', 'Box7.jpg', 'Birthday gift or for yourself , gift Watch , it Will suits you!')" style="background-image: url('Box7.jpg');"> </div>
                  <p>See more </p> 
+                 <button onclick="addToCart('Watches for Men')">Add to Cart</button>
                 </div>
          </div>
          <div class=" box"> 
              <div class="box-content">
-                 <h2> Coffee Mugs for Specially "You" </h2>
-                 <div class="box-image" style="background-image: url('Box8.jpg');"> </div>
+                 <h2> Coffee Mugs </h2>
+                 <div class="box-image" onclick="showModal('Coffee Mugs', 'Box8.jpg', 'And , for Coffee Lovers , here is a Mug for your Only Occasion even personal too')" style="background-image: url('Box8.jpg');"> </div>
                  <p>See more </p> 
+                 <button onclick="addToCart('Coffee Mugs')">Add to Cart</button>
                 </div>
          </div>
      </div>
@@ -217,6 +236,28 @@
         </div>
 
      </footer>
-           
+
+     <!-- Product Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Product" />
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+     <!-- Welcome Popup -->
+<div id="welcomePopup" class="welcome-popup">
+  <div class="popup-content">
+    <h2>Welcome to My Amazon Clone! 🛒</h2>
+    <p>Explore amazing products and enjoy a clean UI clone experience.</p>
+    <button onclick="closeWelcomePopup()">Let's Start</button>
+  </div>
+</div>
+
+           <script src="amazon.js"></script>
+           <script src="cart.js"></script>
 </body>
 </html>
