@@ -5,7 +5,7 @@ function displayCart() {
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
         return;
-        alert(`Hey Friend , Your ${itemName} added to cart!`);
+        alert(`Hey Vibhor , Your ${itemName} added to cart!`);
     }
 
     cart.forEach((item, index) => {
