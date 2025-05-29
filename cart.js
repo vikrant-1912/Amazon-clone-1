@@ -5,7 +5,7 @@ function displayCart() {
     if (cart.length === 0) {
         cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
         return;
-        alert(`Hey Vibhor , Your ${itemName} added to cart!`);
+        
     }
 
     cart.forEach((item, index) => {
@@ -13,6 +13,7 @@ function displayCart() {
         div.className = "cart-item";
         div.innerHTML = `<strong>${index + 1}. ${item.name}</strong>`;
         cartItemsContainer.appendChild(div);
+        alert(`Hey Vibhor , Your ${itemName} added to cart!`);
     });
 }
 
