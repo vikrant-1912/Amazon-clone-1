@@ -13,7 +13,7 @@ function displayCart() {
         div.className = "cart-item";
         div.innerHTML = `<strong>${index + 1}. ${item.name}</strong>`;
         cartItemsContainer.appendChild(div);
-        alert(`Hey Vibhor , Your ${itemName} added to cart!`);
+        
     });
 }
 
