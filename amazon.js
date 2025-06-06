@@ -37,7 +37,7 @@ function addToCart(itemName) {
     // Update counter
     const count = cart.length;
     document.getElementById("cart-count").textContent = count;
-    alert(`Hey Vibhor , Your ${itemName} added to cart!`);
+    alert(`Hey Manish , Your ${itemName} added to cart!`);
 }
 
 
