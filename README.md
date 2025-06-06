@@ -5,6 +5,11 @@ A simple e-commerce user interface inspired by Amazon. Built with HTML5 , CSS3 a
 Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving user Smooth Experience like a real Amazon have.
 
 ## 🚀 Features
+- Search Filtering
+- Add to Cart with Cart Count
+- Dark Mode
+- Product Modal
+- Welcome Pop-Up
 - Product grid and detail display
 - Navigation bar and footer
 - Basic cart interface (static)
@@ -13,7 +18,7 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 ## 🧰 Tech Stack
 - HTML5
 - CSS3
-- javaScript (Adding)
+- javaScript
 - Responsive Design
 
 ## 📸 Screenshots
