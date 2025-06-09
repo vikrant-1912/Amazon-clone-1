@@ -23,7 +23,13 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 - javaScript
 - Responsive Design
 
+
+
 ## 📸 Screenshots
+
+
+
+
 
 
 
@@ -34,17 +40,17 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 
 ## 📁 Folder Structure
 
-amazon/                  ← 🌟 Main project folder
+amazon/                  ← 🌟 Main project folder   <br>
+│                                                     <br>
+├── launch.html                   ← ✅ Portfolio intro page (first file to open)   <br>
+├── login.html                   ← 🔐 Login & Signup interface   <br>
+├── dashboard.html               ← 🧑‍💼 Stylish user dashboard with Amazon Start Button   <br>
+├── login.js                     ← 🧠 Logic for login/signup (uses localStorage)   <br>
+├── style.css                    ← 🎨 Used Original Amazon clone CSS   <br>
 │
-├── launch.html                   ← ✅ Portfolio intro page (first file to open)
-├── login.html                   ← 🔐 Login & Signup interface
-├── dashboard.html               ← 🧑‍💼 Stylish user dashboard with Amazon Start Button 
-├── login.js                     ← 🧠 Logic for login/signup (uses localStorage)
-├── style.css                    ← 🎨 Used Original Amazon clone CSS
-│
-├── README.txt                   ← 📝 How to run the project
-├── PROJECT_SUMMARY.txt          ← 📃 Project summary 
-└── (Any image/assets folders)   ← 🖼️ icons, images, product files
+├── README.txt                   ← 📝 How to run the project   <br>
+├── PROJECT_SUMMARY.txt          ← 📃 Project summary    <br>
+└── (Any image/assets folders)   ← 🖼️ icons, images, product files    <br>
 
 
 
