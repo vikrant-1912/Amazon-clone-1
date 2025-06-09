@@ -15,7 +15,7 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 - Basic cart interface (static)
 - Responsive design
 
-- & Adding More Features and Funtionalities continuesly , Like Login / Sign-up Logics , DashBoard Page for User - logout Button , Launching Page for Best experience of user on Screen before Enterinhg Amazon Clone (Giving like a Rich UI feel ) , Taking My User's Feedback for Improvements & Moreee ( till i thought )  Will be Seen Sooooooooon...
+- & Adding More Features and Funtionalities continuesly , Like Login / Sign-up Logics , DashBoard Page for User - logout Button , Launching Page for Best experience of user on Screen before Enterinhg Amazon Clone (Giving like a Rich UI feel ) , Taking My User's Feedback for Improvements & More ( till i thought )  Will be Seen Sooooooooon...
 
 ## 🧰 Tech Stack
 - HTML5
