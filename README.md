@@ -15,6 +15,8 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 - Basic cart interface (static)
 - Responsive design
 
+- & Adding More Features and Funtionalities continuesly , Will be Seen Sooooooooon...
+
 ## 🧰 Tech Stack
 - HTML5
 - CSS3
