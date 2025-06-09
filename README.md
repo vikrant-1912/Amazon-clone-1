@@ -24,11 +24,44 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 - Responsive Design
 
 ## 📸 Screenshots
-<!-- Add screenshots once available -->
-<!-- ![Home](./screenshots/home.png) -->
+
+
+
 
 ## 🌐 Live Demo
 [Visit Site](https://amazon-clone-1-black-six.vercel.app))
 
+
 ## 📁 Folder Structure
+
+amazon/                  ← 🌟 Main project folder
+│
+├── launch.html                   ← ✅ Portfolio intro page (first file to open)
+├── login.html                   ← 🔐 Login & Signup interface
+├── dashboard.html               ← 🧑‍💼 Stylish user dashboard with Amazon Start Button 
+├── login.js                     ← 🧠 Logic for login/signup (uses localStorage)
+├── style.css                    ← 🎨 Used Original Amazon clone CSS
+│
+├── README.txt                   ← 📝 How to run the project
+├── PROJECT_SUMMARY.txt          ← 📃 Project summary 
+└── (Any image/assets folders)   ← 🖼️ icons, images, product files
+
+
+
+## 📬 Reach Out to Me
+
+
+1. [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) GitHub](https://github.com/vikrant-1912)
+
+
+   
+2. [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white) LinkedIn](https://www.linkedin.com/in/vikrant1912)
+
+
+   
+3. [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white) Instagram](https://www.instagram.com/vikrant_7017)
+
+
+     
+4. [![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white) Gmail](mailto:vikrantkhatana15@gmail.com)  
 
