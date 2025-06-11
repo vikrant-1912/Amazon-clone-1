@@ -22,6 +22,8 @@ Also , Addeing now  some JavaScript Funtionality for more Interactive UI giving 
 - CSS3
 - javaScript
 - Responsive Design
+- Vercel
+- Netlify
 
 
 
