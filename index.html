@@ -266,6 +266,13 @@
   </div>
 </div>
 
+<script>
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  if (!users.length) {
+    window.location.href = "launch.html";
+  }
+</script>
+
            <script src="amazon.js"></script>
            <script src="cart.js"></script>
 </body>
