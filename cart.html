@@ -19,10 +19,50 @@
     </style>
 </head>
 <body>
+
+    <nav style="background-color: #232F3E; padding: 10px; color: white; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif; font-size: 16px; ">
+        <a href="home.html">Home</a>
+        <a href="index.html" class="active">Launch</a>
+        <a href="login.html">Login</a>
+        <a href="login.html">Signup</a>
+        <a href="cart.html">Cart</a>
+        <a href="home.html">Feedback</a>
+        <a href="home.html">About</a>
+
+    </nav>
+
     <div class="cart-container">
-        <h1>Manish's Shopping Cart 🛒</h1>
+        <h1 style="color: royalblue; font-style: oblique; font-family: 'Times New Roman', Times, serif;">Your Shopping Cart 🛒</h1>
         <div id="cartItems"></div>
     </div>
+
+
+    <div id="totalPrice" class="total-price"></div>
+    <div class="checkout">
+        <button style="border-radius: 8px;" id="checkoutButton">Checkout</button>
+    </div>
+
+
+    <div id="emptyCartMessage" class="empty-cart-message" style="display: none;">
+        <h2>Your cart is empty!</h2>
+        <p style="color: rosybrown;">Start shopping to add items to your cart.</p>
+        <a href="home.html" class="btn">Go to Shop</a>
+
+
+    </div>
+
+    <div id="errorMessage" class="error-message" style="display: none;">
+        <h2>Error</h2>
+        <p style="color: rosybrown;">There was an error processing your request. Please try again later.</p>
+        <a href="home.html" class="btn">Go to Home</a>
+
+
+    <div id="checkoutMessage" class="checkout-message" style="display: none;">
+        <h2>Checkout Successful!</h2>
+        <p style="color: rosybrown;">Thank you for your purchase!</p>
+        <a href="home.html" class="btn">Continue Shopping</a>
+    </div>
+
 
     <script src="cart.js"></script>
 </body>
