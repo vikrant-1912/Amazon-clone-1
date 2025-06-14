@@ -2,17 +2,16 @@ function toggleForm() {
   const loginForm = document.getElementById("login-form");
   const signupForm = document.getElementById("signup-form");
 
-  if (loginForm === "none") {
-
-    loginForm = "block";
-    signupForm = "none";
-
-  } else {  
-
-    loginForm = "none";
-    signupForm = "block";
+  if (loginForm.style.display === "none") {
+    loginForm.style.display = "block";
+    signupForm.style.display = "none";
+  } else {
+    loginForm.style.display = "none";
+    signupForm.style.display = "block";
   }
 }
+
+
 
 function signupUser() {
   const name = document.getElementById("signup-name").value;
