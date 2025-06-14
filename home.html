@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- filepath: d:\Amazon-clone-1\index.html
+<meta http-equiv="refresh" content="0; url=launch.html"> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Use "FONT-AWESOME" to copy-paste code of diff. ICONS in your Html file.
+    to copy - paste ICONS from"FONT-AWESOME" site, we have to first add "FONT-AWESOME library" in our HTML FILE , TO add library of "FONT-AWESOME site" for icons add in out styling page , GO TO "CDN" site, and just copy-paste link of "FONT-AWESONE" in html like see above link attached. -->
+
+</head>
+<body>
+     <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"> </div>
+            </div> 
+
+                <div class="nav-address border">
+                    <p class="first-line"> Deliver to</p>
+                    <div class="addressicon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="second-line"> India </p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option> All</option>
+                    <option> Grocery</option>
+                    <option> Clothes </option>
+                    <option> Electronics </option>
+                    <option> Kitchen Utensils </option>
+                    <option>  Mobiles </option>
+                    <option> Fashion </option>
+                    <option> Health </option>
+                    <option> Gift Store </option>
+
+                </select>
+                <input placeholder="Search amazon" class="search-input" oninput="filterProducts()"> 
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+        </div>
+
+        <div class="nav-signin border">
+            <p><span> Hello, sign in </span></p>
+            <p class="nav-second"> Account & Lists </p>
+        </div>
+
+        <div class="nav-returns border">
+            <p><span> Returns </span></p>
+            <p class="nav-second"> & Orders </p>
+        </div>
+    <a href="cart.html">
+        <div class="nav-cart border"> 
+            <i class="fa-solid fa-cart-plus"></i>
+            Cart <span id="cart-count" style="background: orange; color: black; padding: 2px 6px; border-radius: 10px;">0</span> 
+        </div>
+    </a>
+
+        <div class="toggleDarkMode">
+        <button onclick="toggleDarkMode()" style="margin-left: 8px; padding: 4px; border-radius: 15px; cursor: pointer; font-weight: 700; background-color:palevioletred">
+    🌙 Dark Mode
+</button>
+
+
+<!-- Feedback Form  -->
+<a id="feedback"   href="https://forms.gle/eWMWXpAhRwFwpCM56" target="_blank">
+  <button style="background-color:palevioletred; font-weight: 700; font-style: italic; border-radius: 12px; cursor: pointer;"> Feedback Form </button>
+</a>
+
+
+        </div>
+
+    </div>
+
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                Shop Deals in Electronics
+            </div>
+        </div>
+
+     </header>
+
+     <div class="hero-section">
+
+        <div class="hero-message">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">  Click here to go to amazon.in</a></p>
+        </div>
+     </div>
+
+     <div class="shop-section">
+
+        <div class="box">
+           <div class="box-content">
+            <h2> Kitchen Utensils </h2>
+            <div class="box-image" onclick="showModal('Kitchen Utensils', 'Box1.jpg', 'High quality kitchen utensils for your cooking needs')" style="background-image: url('Box1.jpg');"> </div>
+            <p>See more </p> 
+            <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Kitchen Utensils')">Add to Cart</button>
+            
+
+           </div>
+            
+        </div>
+        <div class=" box"> 
+            <div class="box-content">
+                <h2> Home Decor </h2>
+                <div class="box-image" onclick="showModal('Home Decor', 'Box2.jpg', 'See and choose your Perfect Home decor')" style="background-image: url('Box2.jpg');"> </div>
+                <p>See more </p> 
+                <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Home Decor')">Add to Cart</button>
+               </div>
+        </div>
+        <div class=" box"> 
+            <div class="box-content">
+                <h2> Clothes</h2>
+                <div class="box-image" onclick="showModal('Clothes', 'Box3.jpg', 'Clothes are everyones need , so why so think before buy!')" style="background-image: url('Box3.jpg');"> </div>
+                <p>See more </p> 
+                <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;"      onclick="addToCart('Clothes')">Add to Cart</button>
+               </div>
+        </div>
+        <div class=" box"> 
+            <div class="box-content">
+                <h2> Mobiles & Smartphones </h2>
+                <div class="box-image" onclick="showModal('Mobiles & Smartphones', 'Box4.jpg', 'Hey YOU! Gen-z, comm-on Buy or gift somone a perfect gift i.e Smartphone')" style="background-image: url('Box4.jpg');"> </div>
+                <p>See more </p> 
+                <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Mobile & Smartphones')">Add to Cart</button>
+               </div>
+        </div>
+
+        <div class=" box">
+            <div class="box-content">
+             <h2> Headphones & Airbuds </h2>
+             <div class="box-image" onclick="showModal('Headphones & Airbuds', 'Box5.jpg', 'Ahh! Airbuds or Headphones are everyones favourites , buy from 300-25000 any Range')" style="background-image: url('Box5.jpg');"> </div>
+             <p>See more </p> 
+             <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Headphones & Airbuds')">Add to Cart</button>
+            </div>
+             
+         </div>
+         <div class=" box"> 
+             <div class="box-content">
+                 <h2> Laptops </h2>
+                 <div class="box-image" onclick="showModal('Laptops', 'Box6.jpg', 'Laptop , Pc or Mac whatever you Like, for gaming or professional work')" style="background-image: url('Box6.jpg');"> </div>
+                 <p>See more </p> 
+                 <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Laptops')">Add to Cart</button>
+                </div>
+         </div>
+         <div class=" box"> 
+             <div class="box-content">
+                 <h2> Watches for Men </h2>
+                 <div class="box-image" onclick="showModal('Watches for Men', 'Box7.jpg', 'Birthday gift or for yourself , gift Watch , it Will suits you!')" style="background-image: url('Box7.jpg');"> </div>
+                 <p>See more </p> 
+                 <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Watches for Men')">Add to Cart</button>
+                </div>
+         </div>
+         <div class=" box"> 
+             <div class="box-content">
+                 <h2> Coffee Mugs </h2>
+                 <div class="box-image" onclick="showModal('Coffee Mugs', 'Box8.jpg', 'And , for Coffee Lovers , here is a Mug for your Only Occasion even personal too')" style="background-image: url('Box8.jpg');"> </div>
+                 <p>See more </p> 
+                 <button style="border-radius: 7px; text-align: center; font-size:medium; cursor: pointer; background-color:orange; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; font-style:oblique; text-transform:capitalize; transition: ease-in;" onclick="addToCart('Coffee Mugs')">Add to Cart</button>
+                </div>
+         </div>
+     </div>
+    
+
+     <footer>
+            <div class="foot-panel1">
+                Back to Top
+            </div>
+            <div class="foot-panel2">
+                <ul>
+                <p> Get to Know Us</p>
+                <a href="#"> Careers</a>
+                 <a href="#">Blog </a>
+                 <a href="#">About Amazon</a>
+                  <a href="#">Investor Relations</a>
+                 <a href="#"> Amazon Devices</a>
+                  <a href="#"> Amazon Science</a>
+                </ul>
+
+                <ul>
+                    <p> Make Money with Us</p>
+                    <a href="#"> Sell products on Amazon</a>
+                     <a href="#">Sell on Amazon Business </a>
+                     <a href="#">Sell apps on Amazon</a>
+                      <a href="#">Become an Affiliate</a>
+                     <a href="#"> Advertise Your Products</a>
+                      <a href="#"> Host an Amazon Hub</a>
+                    </ul>
+
+                    <ul>
+                        <p> 	
+                            Amazon Payment Products</p>
+                        <a href="#"> Amazon Business Cards</a>
+                         <a href="#">Shop with Points </a>
+                         <a href="#">Reload Your Balance</a>
+                          <a href="#">Amazon Currency Converter</a>
+                         <a href="#"> Amazon Devices</a>
+                          <a href="#"></a>
+                        </ul>
+
+                        <ul>
+                            <p> Let Us Help You</p>
+                            <a href="#"> Amazon and COVID-19</a>
+                             <a href="#">Your Account</a>
+                             <a href="#">Help</a>
+                              <a href="#">Your Orders</a>
+                             <a href="#"> Shipping Rates & Policies</a>
+                              <a href="#"> Returns & Replacements</a>
+                            </ul>                 
+            </div>
+
+        <div class="foot-panel3">
+            <div class="logo">
+
+            </div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a> Condions of Use</a>
+                <a> Privacy Usage</a>
+                <a> Your Ads Privacy Choices</a>
+            </div>
+
+            <div class="copyright">
+                © 1996-2025, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+
+     </footer>
+
+     <!-- Product Modal -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Product" />
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+
+     <!-- Welcome Popup -->
+<div id="welcomePopup" class="welcome-popup">
+  <div class="popup-content">
+    <h2>Hey, Manish, Welcome to My Amazon Clone! 🛒</h2>
+    <p>Explore amazing products and enjoy a clean UI clone experience.</p>
+    <button onclick="closeWelcomePopup()">Let's Start</button>
+  </div>
+</div>
+
+<script>
+  const users = JSON.parse(localStorage.getItem("users")) || [];
+  if (!users.length) {
+    window.location.href = "launch.html";
+  }
+</script>
+
+           <script src="amazon.js"></script>
+           <script src="cart.js"></script>
+</body>
+</html>

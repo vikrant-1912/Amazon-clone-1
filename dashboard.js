@@ -13,8 +13,8 @@ const users = JSON.parse(localStorage.getItem("users"));
       }
 
       
-    function startamazon() {
-      alert("Launched successfully!");
-    //   window.location.href = "login.html";
-      window.location.href = "index.html"
-      }
+   // filepath: d:\Amazon-clone-1\dashboard.js
+function startamazon() {
+  alert("Launched successfully!");
+  window.location.href = "home.html"; // was "index.html"
+}
