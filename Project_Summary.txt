@@ -1,0 +1,34 @@
+# Project Summary: Amazon Clone with Login System
+
+
+## 🎯 Objective:
+Build a simple and responsive Amazon Clone frontend, enhanced with user login and signup features using HTML, CSS, and JavaScript only.
+
+
+## 🔧 Technologies Used:
+- HTML5 & CSS3
+- Vanilla JavaScript
+- FontAwesome (for icons)
+- localStorage (for storing user data)
+
+
+## 🧩 Features Added:
+- Responsive login/signup page
+- User input validation and alerts
+- Stores user data in localStorage
+- Redirects to a personalized dashboard after login
+- Mobile/tablet/desktop compatible
+
+
+## 🎁 Why This Impresses:
+- No backend: Perfect for showcasing frontend logic.
+- Clean UI: Modern look using basic styles.
+- Reusability: Can be extended with product listing, cart, etc.
+
+
+## 👨‍💻 Role:
+- Designed and developed as a **Frontend Developer**.
+
+---
+
+Created with Love by : [Vikrant]
